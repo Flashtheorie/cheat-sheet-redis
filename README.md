@@ -10,13 +10,13 @@ value = client.lRange("name", 0,10);
         res.send(value);
     });
     
-/* 
-return : 
-[
-    "Antoine",
-    "Anthony",
-    "Baptiste",
-    "Maxim"
-]
-*/
+//
+// return : 
+// [
+//    "Antoine",
+//    "Anthony",
+//    "Baptiste",
+//    "Maxim"
+// ]
+
 ```
