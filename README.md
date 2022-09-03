@@ -51,3 +51,14 @@ client.on('error', (err) => {
     console.log('Something went wrong ' + err);
 });
 ```
+
+# Get hash data depuis le terminal
+
+```
+hget <key> <field>
+```
+
+
+
+
+
