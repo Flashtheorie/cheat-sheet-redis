@@ -58,7 +58,23 @@ client.on('error', (err) => {
 hget <key> <field>
 ```
 
+# Set hash depuis nodejs
 
+```
+    client.hSet('62f976d26779729214078b2e', {
+        'username': 'username',
+        'email': 'email@gmail.com',
+        'password': 'password',
+        'avatar': 'assets/girl.png',
+        'premium' : 2,
+        'datecreation' : "2022-08-15T22:44:47.581Z",
+        'statut' : 1,
+        'admin' : 1,
+        'notifications' : 0,
+        'online' : 0,
+        'last_connection' : "2022-08-30T16:55:22.610+00:00"
+      }, // add time limit to the key
+      redis.print);
 
 
 
