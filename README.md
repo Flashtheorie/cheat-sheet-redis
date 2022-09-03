@@ -26,4 +26,28 @@ value = client.lRange("name", 0,10);
 ```
 redis-cli -u redis://password@host:port
 
+```
 
+# Connexion au serveur distant depuis nodejs
+```
+const client = redis.createClient({
+    url : 'redis://username:password@host:port'
+});
+
+(async () => {
+    try {
+      await client.connect();
+      console.log('Connected to redis');
+    } catch (err) {
+      console.error(err)
+    }
+  })()
+
+client.on('connect', () => {
+    console.log('Redis client connected');
+});
+
+client.on('error', (err) => {
+    console.log('Something went wrong ' + err);
+});
+```
