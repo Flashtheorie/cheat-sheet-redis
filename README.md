@@ -20,3 +20,10 @@ value = client.lRange("name", 0,10);
 // ]
 
 ```
+
+
+# Connexion au serveur distant depuis le terminal
+```
+redis-cli -u redis://password@host:port
+
+
