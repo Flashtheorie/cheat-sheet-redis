@@ -77,4 +77,10 @@ hget <key> <field>
       redis.print);
 
 
-
+```
+# Set expiration date to a key in ndoejs
+```
+# Set hash depuis nodejs
+client.set('my test key', 'my test value', redis.print);
+client.expire('my test key', 120);
+```    
