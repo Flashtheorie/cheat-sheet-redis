@@ -82,6 +82,10 @@ hget <key> <field>
 ```
 client.set('my test key', 'my test value', redis.print);
 client.expire('my test key', 120);
+
+OR
+client.setEx('my test key', 30, 'my test value', redis.print);
+
 ```    
 
 # res.send(key) in nodejs
