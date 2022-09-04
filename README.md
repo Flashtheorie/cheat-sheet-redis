@@ -83,3 +83,11 @@ hget <key> <field>
 client.set('my test key', 'my test value', redis.print);
 client.expire('my test key', 120);
 ```    
+
+# res.send(key) in nodejs
+```
+    value = client.get('my test key');
+    value2 = Promise.resolve(value);
+    value2.then(function (value) {
+    res.send(" Le nom assigné est " + value);
+```
